@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let contador, proximo, anterior, resposta;
+        resposta = "s";
+        while(resposta== "s" || resposta == "S"){
+            proximo = 0;
+            anterior = 0;
+            atual = 1;
+            contador = 0;
+            contador = parseInt(prompt("Quantos numeros fibonacci deseja gerar? "))
+            alert(atual)
+            for (let i = 3; i <= contador; i++) {
+            proximo = anterior + atual; // soma os dois anteriores
+            alert(proximo); // mostra o próximo número
+
+            anterior = atual; // anda uma posição
+            atual = proximo;  // anda uma posição
+        }
+
+        resposta = prompt("Deseja gerar novamente? (s/n) ");
+    
+            
+        }
+    </script>
+</body>
+</html>
