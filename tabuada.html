@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <script>
+    let repetir = "s";
+
+    while (repetir == "s" || repetir == "S") {
+        let numero,resultado,i
+        numero = parseInt(prompt("Digite um numero:"));
+        i = 1;
+        resultado =+numero+ ":\n";
+
+        while (i <= 9) {
+            resultado =+numero+ " x " +i+ " = " + (numero*i) + "\n" 
+            i++;
+        }
+
+        alert(resultado);
+
+        repetir = prompt("Deseja repetir o processo?");
+    }
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impar ou Par</title>
+</head>
+
+<body>
+    <script>
+        let repetir = "s";
+        while (repetir == "s") {
+            let numerodigitado,resto;
+            numerodigitado = parseInt(prompt("Digite um número:"));
+            resto = numerodigitado % 2;
+
+            while (resto == 0) {
+                alert(numerodigitado + " é par");
+                break;
+            }
+
+            while (resto !== 0) {
+                alert(numerodigitado + " é ímpar");
+                break;
+            }
+
+            repetir = prompt("Deseja repetir o processo?")
+        }
+
+            
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let anterior,atual,proximo,contador,inicio;
+       contador = parseInt(prompt("Digite quantas vezes quer fazer a contagem fibonacci: "))
+        anterior = 0;
+        atual = 1
+        inicio = 1;
+        alert(anterior)
+        
+
+        do { 
+            
+            
+            proximo = atual+anterior;
+            alert(proximo)
+            anterior = atual;
+            atual = proximo;
+            inicio ++
+
+        } while (contador >= inicio)
+        alert("Por hoje é só")
+    </script>
+</body>
+</html>
